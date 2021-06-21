@@ -1,0 +1,243 @@
+﻿@model IEnumerable<NEWMYSOFAPPLICATION.Models.RegisterNewStudent>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Semesters)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdmissionCenter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CivilId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SecondName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ThirdName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FamilyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateofBirthG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateofBirthH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IDType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlaceOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nationality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateExpirationCiviSecurityCard)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MyPHomePhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PersonalEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobilePhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StreetEng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingEng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FloorEng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StreetAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BuildingAr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FloorAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Program)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Track)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HaveJob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KindDisability)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KindDisabilitySpecify)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KnowAOU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactNameEng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumberEng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContactNameAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumberAR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Confirm)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semesters)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdmissionCenter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CivilId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SecondName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ThirdName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FamilyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateofBirthG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateofBirthH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlaceOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nationality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateExpirationCiviSecurityCard)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MyPHomePhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PersonalEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MobilePhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StreetEng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingEng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FloorEng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StreetAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BuildingAr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FloorAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Program)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Track)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HaveJob)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KindDisability)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KindDisabilitySpecify)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KnowAOU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactNameEng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumberEng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContactNameAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNumberAR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Confirm)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

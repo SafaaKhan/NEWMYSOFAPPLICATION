@@ -1,0 +1,31 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @Html.ActionLink("Services Organizer and Facilitator", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+
+            <img src="~/Content/sofWeb.png" class="img-center" height="50" width="50" />
+        </div>
+        <div class="navbar-collapse collapse">
+            <li>@Html.ActionLink("Registered Members", "Index", "RegisterMembers1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Booked Appointment", "Index", "StudentReservedAppointments1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Verifying Member", "Index", "MemberVerifyOnlies1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Registeration Form", "Index", "RegistrationForms1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Normal Student Trensaction", "Index", "NormalTransactions1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Lost Thing Post", "Index", "LostPostings1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Staff TimeSlot", "Index", "TimeSlots1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("TimeSlot Div ", "Index", "TimeSlotDivs1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Event Post", "Index", "PostingEvents_N1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Staff's Service", "Index", "ServicesOfStaffs1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Departments", "Index", "Departments1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <li>@Html.ActionLink("Appointment Trancking", "Index", "Trackings1", new { area = "" }, new { @class = "navbar-brand" })</li>
+            <ul class="nav navbar-nav">
+            </ul>
+        </div>
+    </div>
+</div>
+

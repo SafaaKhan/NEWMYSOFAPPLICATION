@@ -1,0 +1,123 @@
+﻿@model IEnumerable<NEWMYSOFAPPLICATION.Models.NormalTransaction>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.lbContinuing)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntIdC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntNameC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEmailC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.lbGraduate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntIdG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntNameG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntContinuingSt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEmailG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntGraduateSt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FilePath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntcontinuosTransaction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntGraduateTransaction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GraduatedORContinuing)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FileExtension)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.lbContinuing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntIdC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntNameC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEmailC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.lbGraduate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntIdG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntNameG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntContinuingSt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEmailG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntGraduateSt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FilePath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntcontinuosTransaction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntGraduateTransaction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GraduatedORContinuing)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FileExtension)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

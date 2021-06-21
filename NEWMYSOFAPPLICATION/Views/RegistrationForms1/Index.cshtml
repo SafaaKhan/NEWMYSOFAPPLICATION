@@ -1,0 +1,321 @@
+﻿@model IEnumerable<NEWMYSOFAPPLICATION.Models.RegistrationForm>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EntSemesters)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntCenter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntCivilID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArabicName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnglishName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArabicSecond)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnglishSecond)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArabicThird)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnglishThird)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArabicFamily)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnglishFamily)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntMale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntFemale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntGregorian)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntHijri)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntBirthDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntBirthPlace)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntNationality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEXPDateID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntIDType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntPhoneNumH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntMobileNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArea)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArStreet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnStreet)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArBuilding)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnBuilding)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArFloor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnFloor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntArtSience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntCuorses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntCertificateType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntAverage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntGraduateYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntCountry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntEnglishLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntQyasGrade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntTofelTest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntProgram)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntTrack)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntHaveAjob)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntKnowingOfAOU)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntHaveDisAbility)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntContactName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EntPhoneNumEm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FilePath)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntSemesters)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntCenter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntCivilID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArabicName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnglishName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArabicSecond)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnglishSecond)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArabicThird)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnglishThird)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArabicFamily)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnglishFamily)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntMale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntFemale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntGregorian)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntHijri)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntBirthDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntBirthPlace)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntNationality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEXPDateID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntIDType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntPhoneNumH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntMobileNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArea)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArStreet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnStreet)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArBuilding)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnBuilding)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArFloor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnFloor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntArtSience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntCuorses)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntCertificateType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntAverage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntGraduateYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntCountry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntEnglishLevel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntQyasGrade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntTofelTest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntProgram)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntTrack)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntHaveAjob)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntKnowingOfAOU)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntHaveDisAbility)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntContactName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EntPhoneNumEm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FilePath)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

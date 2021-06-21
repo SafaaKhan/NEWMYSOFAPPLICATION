@@ -1,0 +1,123 @@
+﻿@model IEnumerable<NEWMYSOFAPPLICATION.Models.TimeSlots>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.staffID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.startTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endtTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.startDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.endDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.slots)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.service)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WorkingDaysTupe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Day)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breakstartTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.breakendtTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.disableStartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.disableEndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.disablestatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.disableMSG)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.staffID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.startTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endtTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.startDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.endDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.slots)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.service)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkingDaysTupe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Day)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.breakstartTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.breakendtTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.disableStartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.disableEndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.disablestatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.disableMSG)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

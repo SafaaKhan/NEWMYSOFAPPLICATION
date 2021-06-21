@@ -1,0 +1,42 @@
+﻿@model NEWMYSOFAPPLICATION.Models.ServicesOfStaffs
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ServicesOfStaffs</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.staffName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staffName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staffID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staffID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staffServices)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staffServices)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
